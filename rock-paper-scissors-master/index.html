@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+
+  <title>Rock, Paper, Scissors | hakeemdev</title>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span>
+          Rock
+        </span>
+        <span>
+          Paper
+        </span>
+        <span>
+          Scissors
+        </span>
+      </h1>
+      <div class="score">
+        <h3>
+          Score
+        </h3>
+        <p id="score" class="score-delay">
+          0
+        </p>
+      </div>
+    </header>
+    <main id="main">
+      <div class="flex">
+        <div class="row">
+          <button class="circle paper clickable" id="clickable" data-match="paper">
+            <span class="bg">
+              <img src="./images/icon-paper.svg" alt="paper">
+            </span>      
+          </button>
+          <button class="circle scissors clickable" id="clickable" data-match="scissors">
+            <span class="bg">
+              <img src="./images/icon-scissors.svg" alt="scissors">
+            </span>      
+          </button>
+        </div>
+        <button class="circle rock clickable" id="clickable" data-match="rock">
+          <span class="bg">
+            <img src="./images/icon-rock.svg" alt="rock">
+          </span>        
+        </button>
+      </div>
+    </main>
+    <div class="paly-show" id="paly-show">
+      <div class="user-pick">
+        <h4>
+          you picked
+        </h4>
+        <button class="circle paper no-event" id="userMatch">
+          <span class="bg">
+            <img src="./images/icon-paper.svg" alt="paper">
+          </span>      
+        </button>
+      </div>
+      <div class="block">
+        <h2 class="result-msg" id="msg">
+          you Win
+        </h2>
+        <button class="play-again" id="play-again">
+          paly again
+        </button>
+      </div>
+      <div>
+        <h4>
+          the house picked
+        </h4>
+        <button class="circle scissors no-event delay" id="computerMatch">
+          <span class="bg">
+            <img src="./images/icon-scissors.svg" alt="scissors">
+          </span>      
+        </button>
+      </div>
+    </div>
+    <div class="rules-img" id="rules">
+      <h5>
+        rules
+      </h5>
+      <button class="close" id="close">
+        X
+      </button>
+      <img src="./images/image-rules.svg" alt="">
+    </div>
+    <button class="rules" id="show-rules">
+      Rules
+    </button>
+  </div>
+  <footer>
+    Created by <a href="https://hakeemdev.netlify.app/" target="blank">Hakeem</a>
+    &copy; Copyrighted 2020
+
+  </footer>
+</body>
+</html>
